@@ -1,0 +1,47 @@
+.frame-left {
+	background-repeat: repeat-y;
+	background-position: left;
+}
+
+.frame-right {
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+.frame-top {
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+.frame-botoom {
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+.corner-top-left {
+	background-repeat: no-repeat;
+}
+
+.corner-top-right {
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.corner-bottom-left {
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.corner-bottom-right {
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.contemt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0px 80px;
+	padding: 80px 0;
+}
