@@ -1,0 +1,12 @@
+.frame {
+	background: url(../image/top-left.jpg) top left no-repeat, url(../image/top-right.jpg) top right no-repeat, url(../image/boton-left.jpg) left bottom no-repeat, url(../image/boton-right.jpg) right bottom no-repeat, url(../image/left.jpg) left repeat-y, url(../image/right.jpg) right repeat-y, url(../image/boton.jpg) bottom repeat-x, url(../image/top.jpg) top repeat-x;
+}
+
+span {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	line-height: 40px;
+	text-align: center;
+	padding: 80px 80px;
+}
