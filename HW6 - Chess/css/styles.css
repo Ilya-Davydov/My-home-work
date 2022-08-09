@@ -1,0 +1,141 @@
+.board {
+	margin: 50px;
+}
+
+.conva {
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+
+.conva div {
+	width: 20px;
+	height: 50px;
+	background-color: aquamarine;
+	border: 1px solid #000;
+}
+
+.conva :first-child, .conva :last-child {
+	width: 20px;
+	height: 20px;
+	background-color: aquamarine;
+	border: 1px solid #000;
+}
+
+.rowA, .rowC, .rowE, .rowG {
+	float: left;
+	text-align: center;
+}
+
+.rowA div, .rowC div, .rowE div, .rowG div {
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgb(133, 133, 133);
+}
+
+.rowA :nth-child(odd), .rowC :nth-child(odd), .rowE :nth-child(odd), .rowG :nth-child(odd) {
+	background-color: rgb(133, 133, 133);
+}
+
+.rowA :first-child, .rowA :last-child, .rowC :first-child, .rowC :last-child, .rowE :first-child, .rowE :last-child, .rowG :first-child, .rowG :last-child {
+	width: 50px;
+	height: 20px;
+	background-color: aquamarine;
+	border: 1px solid #000;
+	line-height: 20px;
+}
+
+.rowB, .rowD, .rowF, .rowH {
+	float: left;
+	text-align: center;
+}
+
+.rowB div, .rowD div, .rowF div, .rowH div {
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgb(133, 133, 133);
+}
+
+.rowB :nth-child(even), .rowD :nth-child(even), .rowF :nth-child(even), .rowH :nth-child(even) {
+	background-color: rgb(114, 114, 114);
+}
+
+.rowB :first-child, .rowB :last-child, .rowD :first-child, .rowD :last-child, .rowF :first-child, .rowF :last-child, .rowH :first-child, .rowH :last-child {
+	width: 50px;
+	height: 20px;
+	background-color: aquamarine;
+	border: 1px solid #000;
+	line-height: 20px;
+}
+
+.pawn-W {
+	background-image: url(../img/pawn-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pawn-B {
+	background-image: url(../img/pawn-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.rook-W {
+	background-image: url(../img/L-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.rook-B {
+	background-image: url(../img/L-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.horse-W {
+	background-image: url(../img/horse-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.horse-B {
+	background-image: url(../img/horse-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.elephant-W {
+	background-image: url(../img/F-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.elephant-B {
+	background-image: url(../img/F-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.queen-W {
+	background-image: url(../img/KV-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.queen-B {
+	background-image: url(../img/KV-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.king-W {
+	background-image: url(../img/K-W.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.king-B {
+	background-image: url(../img/K-B.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
