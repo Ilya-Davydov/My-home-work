@@ -1,0 +1,98 @@
+.forms {
+	margin: 12px;
+}
+
+.story {
+	display: inline-block;
+	width: 175px;
+	margin: 10px 0px;
+}
+.name {
+	width: 87%;
+	margin-bottom: 10px;
+}
+
+.select {
+	display: inline-block;
+	width: 87%;
+	margin: 10px 0px;
+}
+
+.input {
+	width: 40%;
+}
+.category {
+	display: inline-block;
+	width: 175px;
+}
+.where {
+	display: inline-block;
+	width: 175px;
+	margin-bottom: 10px;
+}
+.radio {
+	display: inline-block;
+	width: 87%;
+}
+
+.allow {
+	display: inline-block;
+	width: 175px;
+	margin: 10px 0px;
+}
+
+.checkbox {
+	display: inline-block;
+}
+.article {
+}
+
+.art-input {
+	width: 99%;
+	margin-top: 5px;
+}
+
+.button {
+	margin-top: 5px;
+}
+
+@media (max-width: 1230px) {
+	.name {
+		width: 99%;
+	}
+}
+
+@media (max-width: 1010px) {
+	.story {
+		display: inline-block;
+		width: 99%;
+	}
+}
+
+@media (max-width: 900px) {
+	.select {
+		display: inline-block;
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.input {
+		width: 100%;
+	}
+
+	.where {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.radio {
+		display: block;
+		width: 87%;
+	}
+
+	label {
+		display: inline-block;
+		width: 100%;
+	}
+}
