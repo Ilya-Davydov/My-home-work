@@ -1,0 +1,45 @@
+.wrapper {
+	margin: 50px;
+}
+.text {
+}
+
+.container {
+	width: 100%;
+	padding: 20px 0px;
+
+}
+
+.images {
+	position: relative;
+	width: 430px;
+	height: 375px;
+	margin: 0 auto;
+}
+.bio {
+	position: absolute;
+}
+
+.man {
+	position: absolute;
+	top: -10px;
+	left: 235px;
+}
+.smoki {
+	position: absolute;
+	top: 30px;
+	left: 80px;
+	z-index: 1;
+
+}
+.yang {
+	position: absolute;
+	top: 180px;
+	left: 115px;
+}
+
+.bio:hover, .man:hover, .yang:hover {
+	z-index: 10;
+}
+.end {
+}
