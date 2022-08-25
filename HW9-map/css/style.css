@@ -1,0 +1,467 @@
+.map {
+	display: block;
+	width: 900px;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+/* ----Пульс 1 "Остров"--------- */
+
+.island {
+	position: absolute;
+	top: 170px;
+	left: 1050px;
+}
+
+.island .pulse-island {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.island .pulse-island::before,
+.island .pulse-island::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.island .pulse-island::after {
+	animation-delay: .5s;
+}
+
+.table-island {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 985px;
+	top: -660px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-island:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.island:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-island:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* ----Пульс 2 "Остров"--------- */
+
+.cherep {
+	position: absolute;
+	top: 275px;
+	left: 970px;
+}
+
+.cherep .pulse-cherep {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.cherep .pulse-cherep::before,
+.cherep .pulse-cherep::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.cherep .pulse-cherep::after {
+	animation-delay: .5s;
+}
+
+.table-cherep {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 905px;
+	top: -690px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-cherep:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.cherep:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-cherep:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+/* ----Пульс 3 "Кракен"--------- */
+
+.kraken {
+	position: absolute;
+	top: 370px;
+	left: 800px;
+}
+
+.pulse {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.pulse::before,
+.pulse::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+	text-align: left;
+}
+
+.pulse::after {
+	animation-delay: .5s;
+}
+
+.table-kraken {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 735px;
+	top: -720px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-kraken:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	}
+
+
+.kraken:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-kraken:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* ----Пульс 4 "Грот"--------- */
+
+.grot {
+	position: absolute;
+	top: 530px;
+	left: 600px;
+}
+.grot .pulse-grot {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.grot .pulse-grot::before,
+.grot .pulse-grot::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.grot .pulse-grot::after {
+	animation-delay: .5s;
+}
+
+.table-grot {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 535px;
+	top: -660px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-grot:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.grot:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-grot:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* ----Пульс 5 "Клад"--------- */
+
+.klad {
+	position: absolute;
+	top: 550px;
+	left: 950px;
+}
+
+.klad .pulse-klad {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.klad .pulse-klad::before,
+.klad .pulse-klad::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.klad .pulse-klad::after {
+	animation-delay: .5s;
+}
+
+.table-klad {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 890px;
+	top: -760px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-klad:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.klad:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-klad:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* ----Пульс 6 "Бухта"--------- */
+
+.buhta {
+	position: absolute;
+	top: 250px;
+	left: 450px;
+}
+.buhta .pulse-buhta {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.buhta .pulse-buhta::before,
+.buhta .pulse-buhta::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.buhta .pulse-buhta::after {
+	animation-delay: .5s;
+}
+
+.table-buhta {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 385px;
+	top: -1180px;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table-buhta:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.buhta:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table-buhta:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+
+/* ---- Общие параметры--------- */
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+.title {
+	font-size: 24px;
+	color: aliceblue;
+	font-weight: 500;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.text {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.button {
+	height: 30px;
+	background-color: rgb(46, 24, 1);
+	border: none;
+	border-radius: 5px;
+	color: aliceblue;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-family: Helvetica, Arial, sans-serif;
+	display: ;
+}
+
