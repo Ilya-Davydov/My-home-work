@@ -1,28 +1,32 @@
-.map {
-	display: block;
+.map-container {
 	width: 900px;
+	height: 500px;
 	position: relative;
 	margin: 0 auto;
+}
 
+.map {
+	width: 900px;
 }
 
 /* ----Пульс 1 "Остров"--------- */
 
-.island {
+
+.map-container .island {
 	position: absolute;
-	top: 170px;
-	left: 1050px;
+	top: 160px;
+	left: 745px;
 }
 
-.island .pulse-island {
+.map-container .island .pulse-island {
 	width: 15px;
 	height: 15px;
 	background: brown;
 	border-radius: 50%;
 } 
 
-.island .pulse-island::before,
-.island .pulse-island::after {
+.map-container .island .pulse-island::before,
+.map-container .island .pulse-island::after {
 	content: '';
 	position: absolute;
 	border: 1px solid brown;
@@ -34,11 +38,11 @@
 	animation: pulse 1.8s linear infinite;
 }
 
-.island .pulse-island::after {
+.map-container .island .pulse-island::after {
 	animation-delay: .5s;
 }
 
-.table-island {
+.map-container .table-island {
 	width: 250px;
 	height: 100px;
 	position: relative;
@@ -50,13 +54,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 985px;
+	left: 688px;
 	top: -660px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
 	transform: scale(0, 1);
 }
-.table-island:before {
+.map-container .table-island:before {
 	content: "";
 	width: 0; 
 	height: 0;
@@ -67,21 +71,22 @@
 	border-right: 15px solid transparent;
 	border-left: 15px solid transparent;
 }
-.island:hover + div {
+.map-container .island:hover + div {
 	opacity: 1;
 	transform: scale(1, 1);
+	z-index: 1;
 }
-.table-island:hover {
+.map-container .table-island:hover {
 	opacity: 1;
 	transform: scale(1, 1);
-}
+} 
 
 /* ----Пульс 2 "Остров"--------- */
 
 .cherep {
 	position: absolute;
-	top: 275px;
-	left: 970px;
+	top: 215px;
+	left: 620px;
 }
 
 .cherep .pulse-cherep {
@@ -120,8 +125,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 905px;
-	top: -690px;
+	left: 563px;
+	top: -730px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
 	transform: scale(0, 1);
@@ -150,7 +155,7 @@
 .kraken {
 	position: absolute;
 	top: 370px;
-	left: 800px;
+	left: 500px;
 }
 
 .pulse {
@@ -190,8 +195,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 735px;
-	top: -720px;
+	left: 443px;
+	top: -700px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
 	transform: scale(0, 1);
@@ -223,7 +228,7 @@
 .grot {
 	position: absolute;
 	top: 530px;
-	left: 600px;
+	left: 300px;
 }
 .grot .pulse-grot {
 	width: 15px;
@@ -261,7 +266,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 535px;
+	left: 243px;
 	top: -660px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
@@ -292,7 +297,7 @@
 .klad {
 	position: absolute;
 	top: 550px;
-	left: 950px;
+	left: 650px;
 }
 
 .klad .pulse-klad {
@@ -331,7 +336,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 890px;
+	left: 593px;
 	top: -760px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
@@ -362,7 +367,7 @@
 .buhta {
 	position: absolute;
 	top: 250px;
-	left: 450px;
+	left: 150px;
 }
 .buhta .pulse-buhta {
 	width: 15px;
@@ -400,8 +405,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	left: 385px;
-	top: -1180px;
+	left: 93px;
+	top: -1170px;
 	opacity: 0;
 	transition: all 1s ease-in-out .2s;
 	transform: scale(0, 1);
@@ -462,6 +467,4 @@
 	letter-spacing: 3px;
 	font-weight: 600;
 	font-family: Helvetica, Arial, sans-serif;
-	display: ;
 }
-
