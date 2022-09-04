@@ -1,0 +1,169 @@
+.map-container {
+	width: 900px;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.map {
+	width: 900px;
+}
+
+/* ---Позиционирование точек-- */
+
+.map-container .island {
+	position: absolute;
+	top: 160px;
+	left: 745px;
+}
+.map-container .cherep {
+	position: absolute;
+	top: 215px;
+	left: 620px;
+}
+.map-container .kraken {
+	position: absolute;
+	top: 370px;
+	left: 500px;
+}
+.map-container .grot {
+	position: absolute;
+	top: 530px;
+	left: 300px;
+}
+.map-container .klad {
+	position: absolute;
+	top: 550px;
+	left: 650px;
+}
+.map-container .buhta {
+	position: absolute;
+	top: 250px;
+	left: 150px;
+}
+
+.pulse:hover + div {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.table:hover {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+/* ----Позиционирование тейблов-------- */
+
+.table-island {
+	left: 688px;
+	top: -660px;
+}
+.table-cherep {
+	left: 563px;
+	top: -730px;
+}
+.table-kraken {
+	left: 443px;
+	top: -700px;
+}
+.table-grot {
+	left: 243px;
+	top: -660px;
+}
+.table-klad {
+	left: 593px;
+	top: -760px;
+}
+.table-buhta {
+	left: 93px;
+	top: -1170px;
+}
+
+/* ----Тейблы------ */
+
+.table {
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin-left: 26px;
+	background: #79572c;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: 0;
+	transition: all 1s ease-in-out .2s;
+	transform: scale(0, 1);
+}
+.table:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	right: 80%; 
+	bottom: calc(50% - 80px);
+	border-top: 30px solid #79572c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+.title {
+	font-size: 24px;
+	color: aliceblue;
+	font-weight: 500;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.text {
+	font-family: Helvetica, Arial, sans-serif;
+}
+.button {
+	height: 30px;
+	background-color: rgb(46, 24, 1);
+	border: none;
+	border-radius: 5px;
+	color: aliceblue;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* ---Точки --- */
+
+.pulse {
+	width: 15px;
+	height: 15px;
+	background: brown;
+	border-radius: 50%;
+} 
+
+.pulse::before,
+.pulse::after {
+	content: '';
+	position: absolute;
+	border: 1px solid brown;
+	left: -20px;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 1.8s linear infinite;
+}
+
+.pulse::after {
+	animation-delay: .5s;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
